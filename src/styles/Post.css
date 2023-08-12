@@ -1,0 +1,32 @@
+.card {
+  background: #dde8dd;
+  border: 2px solid #000;
+  margin: 15px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  text-transform: uppercase;
+  background: #ccd8cc;
+  padding: 6px;
+  border-bottom: 2px solid #104510;
+  border-left: 2px solid #104510;
+  border-radius: 4px;
+  color: #104510;
+}
+
+.card h4 {
+  font-style: italic;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card span {
+  color: purple;
+  font-style: italic;
+  font-weight: 800;
+}
