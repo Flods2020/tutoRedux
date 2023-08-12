@@ -1,3 +1,9 @@
+# Demarrer la db
+
+## Commencer par json-server --w "nom de la db" || npm run server
+
+## puis npm start sur un localhost différent poour que Redux DevTools fonctionne
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
