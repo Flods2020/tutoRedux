@@ -1,14 +1,20 @@
 .App {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #d8cccc;
 }
 
 .posts-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-#logoContainer {
-  border: 2px solid blue;
-  height: 250px;
 }

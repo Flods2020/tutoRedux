@@ -1,8 +1,10 @@
 .logoComp img {
-  border: 2px solid pink;
+  height: 100px;
   width: 100px;
+  object-fit: cover;
+  border-radius: 50px;
 }
 
 .logoComp {
-  height: 150px;
+  padding: 10px;
 }

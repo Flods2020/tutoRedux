@@ -3,96 +3,172 @@
     {
       "id": "1",
       "title": "Les racines de Jupiter",
-      "author": "Auteur 1",
-      "content": "Ceci est le contenu de l'article 1. Il contient plus de vingt mots pour illustrer un exemple.",
-      "likes": 10
+      "content": "'Les racines de Jupiter' dévoile l'odyssée de pionniers interstellaires explorant une exoplanète énigmatique. Confrontés à des mystères profonds et à des choix déchirants, ils façonnent le destin de deux mondes.",
+      "likes": 606
     },
     {
       "id": "2",
-      "title": "Paroles du Vrai",
-      "author": "Auteur 2",
-      "content": "Voici le contenu de l'article 2, qui explique en détail le sujet abordé. Il est assez long pour répondre à votre demande.",
-      "likes": 7
+      "title": "Paroles du Vrai Gars",
+      "content": "Voici le le parcours d'un journaliste intrépide enquêtant sur une technologie de pointe capable de décoder les pensées. Au croisement de l'éthique et de la vérité, il découvre des secrets bouleversants aux conséquences imprévisibles.",
+      "likes": 1
     },
     {
       "id": "3",
       "title": "Ma Carena",
-      "author": "Auteur 3",
-      "content": "Le contenu de l'article 3 offre un aperçu approfondi du sujet traité. Il dépasse vingt mots pour vous fournir ce dont vous avez besoin.",
-      "likes": 15
+      "content": "Dans les rues chaudes d'une métropole, Carena, une danseuse talentueuse qui trouve bien plus que des mouvements sensuels. Entre désirs interdits et ambitions, le roman explore la quête passionnée de Carena pour l'acceptation, la liberté et l'amour.",
+      "likes": 350
     },
     {
       "id": "9",
-      "title": "Disquette",
-      "author": "Auteur 9",
-      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
-      "likes": 902
+      "title": "Disquettes",
+      "content": "Un génie de l'informatique aux talents obscurs, utilisant ses compétences pour manipuler les systèmes et les vies. Mais lorsqu'il s'attaque à la mauvaise cible, il plonge dans un jeu dangereux mettant tout en péril.",
+      "likes": 1902
     },
     {
       "id": "7",
       "title": "WOLOLO",
-      "author": "Auteur 7",
-      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
+      "content": "'Wololo' suit le voyage épique d'un jeune aventurier à travers des terres enchantées, où il doit maîtriser d'anciens pouvoirs pour arrêter un conflit cataclysmique entre la magie et la technologie.",
       "likes": 2562
     },
     {
       "id": "4",
       "title": "Plus Ultra",
-      "author": "Auteur 4",
-      "content": "Cet article numéro 4 possède un contenu assez substantiel, dépassant le nombre de mots minimum que vous avez spécifié.",
-      "likes": 3
+      "content": "Dans un futur fascinant, des explorateurs interstellaires entreprennent un voyage épique, révélant les profondeurs de l'univers et les secrets mystérieux qui s'y cachent. Bienvenue dans 'Plus Ultra'.",
+      "likes": 113
     },
     {
       "id": "5",
       "title": "En passant par le rayon bio",
-      "author": "Auteur 5",
-      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
-      "likes": 20
+      "content": "Naviguant à travers les défis de la vie urbaine trépidante, 'En passant par le rayon bio' suit des âmes en quête de sens. Entre relations complexes et choix cruciaux, une histoire moderne et captivante émerge.",
+      "likes": 198
     },
     {
       "id": "6",
       "title": "Un verre sous la pluie",
-      "author": "Auteur 6",
-      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
-      "likes": 2562
+      "content": "Au cœur d'une petite ville, les destins s'entremêlent lors d'une soirée pluvieuse inattendue. 'Un verre sous la pluie' raconte les rencontres émotionnelles et les secrets dévoilés qui changent à jamais leurs vies.",
+      "likes": 1598
+    },
+    {
+      "id": "6",
+      "title": "OUPAKATANN ?!",
+      "content": "'OUPAKATANN ?!' plonge dans les péripéties absurdes d'un groupe d'amis tentant de lancer une entreprise de livraison à domicile pour des produits insolites. Des clients excentriques, des malentendus délirants et des situations provocantes créent une comédie adulte déjantée et osée.",
+      "likes": 972
+    },
+    {
+      "id": "10",
+      "title": "Hukong",
+      "content": "Le parcours tumultueux d'un espion intrépide plongé au cœur d'une conspiration mondiale. Entre intrigues torrides, trahisons et retournements érotiques, cette histoire captivante offre un mélange audacieux de suspense et de passion.",
+      "likes": 754
+    },
+    {
+      "id": "11",
+      "title": "Le Paradis de bavards",
+      "content": "Un coin tranquille devient le point de rendez-vous pour tous ceux qui veulent raconter leurs secrets les plus fous et leurs histoires les plus folles, créant ainsi des liens étonnants et des moments incroyablement bizarres.",
+      "likes": 123
+    },
+    {
+      "id": "12",
+      "title": "Grand, Beau et Riche.",
+      "content": "Dans 'Grand, Beau et Riche.', le planificateur d'événements Chris se lance dans l'organisation d'un gala extravagant. Des erreurs désopilantes, des retournements inattendus et des moments de chaos rendent l'événement tout sauf ordinaire.",
+      "likes": 3451
     }
   ],
   "users": [
     {
       "pseudo": "FlowerPower",
-      "likes": 789,
+      "followers": 789,
       "age": 32,
       "id": 99
     },
     {
       "pseudo": "Le Roi Babar",
-      "likes": 19,
+      "followers": 19,
       "age": 48,
       "id": 12
     },
     {
-      "pseudo": "EPIDOR",
-      "likes": 7,
+      "pseudo": "Donutella",
+      "followers": 7,
       "age": 55,
       "id": 209
     },
     {
-      "pseudo": "Pseudoer",
-      "likes": 1000000,
+      "pseudo": "Billy Cranston, The Blue Power Ranger",
+      "followers": 1000000,
       "age": 79,
       "id": 979
     },
     {
-      "pseudo": "The Blue Power Ranger",
-      "likes": 11,
+      "pseudo": "Pseudoer",
+      "followers": 11,
       "age": 109,
       "id": 399
     },
     {
       "pseudo": "Venus",
-      "likes": 6171,
+      "followers": 6171,
       "age": 2589,
       "id": 4415
+    },
+    {
+      "pseudo": "Joe GRAFFIER",
+      "followers": 31,
+      "age": 59,
+      "id": 4015
+    },
+    {
+      "pseudo": "Daisy Duck",
+      "followers": 220145,
+      "age": 99,
+      "id": 887
+    },
+    {
+      "pseudo": "Luna Parker",
+      "followers": 150600,
+      "age": 88,
+      "id": 665
+    },
+    {
+      "pseudo": "Rudeus Greyrat",
+      "followers": 89000,
+      "age": 104,
+      "id": 221
+    },
+    {
+      "pseudo": "Nora Miller",
+      "followers": 301000,
+      "age": 76,
+      "id": 124
+    },
+    {
+      "pseudo": "Sean Paul",
+      "followers": 480000,
+      "age": 45,
+      "id": 967
+    },
+    {
+      "pseudo": "Mia Cooper",
+      "followers": 75000,
+      "age": 82,
+      "id": 537
+    },
+    {
+      "pseudo": "Chuck NORRIS",
+      "followers": 167800,
+      "age": 100,
+      "id": 365
+    },
+    {
+      "pseudo": "Sophia Adams",
+      "followers": 98000,
+      "age": 97,
+      "id": 742
+    },
+    {
+      "pseudo": "Manfred Cafard",
+      "followers": 1,
+      "age": 46,
+      "id": 45
     }
   ]
 }

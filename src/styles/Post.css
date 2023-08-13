@@ -1,5 +1,5 @@
 .card {
-  background: #dde8dd;
+  background: #e8dddd;
   border: 2px solid #000;
   margin: 15px;
   width: 200px;
@@ -9,24 +9,26 @@
 
 .card h3 {
   text-transform: uppercase;
-  background: #ccd8cc;
+  background: #e4aaa0;
   padding: 6px;
-  border-bottom: 2px solid #104510;
-  border-left: 2px solid #104510;
+  border-bottom: 2px solid #451010;
+  border-left: 2px solid #451010;
   border-radius: 4px;
-  color: #104510;
+  color: #451010;
 }
 
-.card h4 {
+.card h5 {
   font-style: italic;
+  color: #451010;
+  border-bottom: 1px dotted #451010;
 }
 
-.card p {
-  text-align: justify;
+.card h6 {
+  color: #4505a2;
 }
 
 .card span {
-  color: purple;
+  color: #b58510;
   font-style: italic;
   font-weight: 800;
 }

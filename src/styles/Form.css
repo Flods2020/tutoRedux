@@ -1,0 +1,54 @@
+form {
+  box-sizing: border-box;
+  background: #d8cccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+select {
+  border-radius: 5px;
+  margin: 7px auto;
+  border: 3px solid #000;
+  width: 60%;
+  height: 20px;
+}
+
+input {
+  padding: 4px;
+}
+
+select {
+  height: 35px;
+}
+
+textarea {
+  height: 100px;
+  width: 70%;
+  margin: 7px auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  font-weight: bolder;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #ad3737;
+  color: #d8cccc;
+}
