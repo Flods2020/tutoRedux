@@ -1,0 +1,8 @@
+.logoComp img {
+  border: 2px solid pink;
+  width: 100px;
+}
+
+.logoComp {
+  height: 150px;
+}

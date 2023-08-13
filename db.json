@@ -2,46 +2,97 @@
   "posts": [
     {
       "id": "1",
-      "title": "Premier article",
+      "title": "Les racines de Jupiter",
       "author": "Auteur 1",
       "content": "Ceci est le contenu de l'article 1. Il contient plus de vingt mots pour illustrer un exemple.",
       "likes": 10
     },
     {
       "id": "2",
-      "title": "Deuxième article",
+      "title": "Paroles du Vrai",
       "author": "Auteur 2",
       "content": "Voici le contenu de l'article 2, qui explique en détail le sujet abordé. Il est assez long pour répondre à votre demande.",
       "likes": 7
     },
     {
       "id": "3",
-      "title": "Troisième article",
+      "title": "Ma Carena",
       "author": "Auteur 3",
       "content": "Le contenu de l'article 3 offre un aperçu approfondi du sujet traité. Il dépasse vingt mots pour vous fournir ce dont vous avez besoin.",
       "likes": 15
     },
     {
+      "id": "9",
+      "title": "Disquette",
+      "author": "Auteur 9",
+      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
+      "likes": 902
+    },
+    {
+      "id": "7",
+      "title": "WOLOLO",
+      "author": "Auteur 7",
+      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
+      "likes": 2562
+    },
+    {
       "id": "4",
-      "title": "Quatrième article",
+      "title": "Plus Ultra",
       "author": "Auteur 4",
       "content": "Cet article numéro 4 possède un contenu assez substantiel, dépassant le nombre de mots minimum que vous avez spécifié.",
       "likes": 3
     },
     {
       "id": "5",
-      "title": "Cinquième article",
+      "title": "En passant par le rayon bio",
       "author": "Auteur 5",
       "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
       "likes": 20
+    },
+    {
+      "id": "6",
+      "title": "Un verre sous la pluie",
+      "author": "Auteur 6",
+      "content": "Le contenu étendu de l'article 5 est conçu pour s'assurer qu'il contienne plus de vingt mots, répondant ainsi à votre demande.",
+      "likes": 2562
     }
   ],
-  "user": [
+  "users": [
     {
       "pseudo": "FlowerPower",
-      "likes": 9,
-      "age": 19,
+      "likes": 789,
+      "age": 32,
       "id": 99
+    },
+    {
+      "pseudo": "Le Roi Babar",
+      "likes": 19,
+      "age": 48,
+      "id": 12
+    },
+    {
+      "pseudo": "EPIDOR",
+      "likes": 7,
+      "age": 55,
+      "id": 209
+    },
+    {
+      "pseudo": "Pseudoer",
+      "likes": 1000000,
+      "age": 79,
+      "id": 979
+    },
+    {
+      "pseudo": "The Blue Power Ranger",
+      "likes": 11,
+      "age": 109,
+      "id": 399
+    },
+    {
+      "pseudo": "Venus",
+      "likes": 6171,
+      "age": 2589,
+      "id": 4415
     }
   ]
 }
