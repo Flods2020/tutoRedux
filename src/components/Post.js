@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import "../styles/Post.css";
 import { useDispatch } from "react-redux";
-import { editPost } from "../actions/post.action";
+import { editPost, getPosts } from "../actions/post.action";
+import { isEmpty } from "./Utils";
 
 const Post = ({ post, users }) => {
   const user = users[Math.floor(Math.random() * users.length)];
@@ -13,25 +14,17 @@ const Post = ({ post, users }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formModify);
-    (await post.auteur)
-      ? (post = {
-          id: post.id,
-          title: formModify.current[0].value,
-          auteur: post.auteur,
-          content: formModify.current[1].value,
-          likes: post.likes,
-        })
-      : (post = {
-          id: post.id,
-          title: formModify.current[0].value,
-          content: formModify.current[1].value,
-          likes: post.likes,
-        });
+    post = {
+      id: post.id,
+      title: formModify.current[0].value,
+      auteur: JSON.parse(formModify.current[2].value),
+      content: formModify.current[1].value,
+      likes: post.likes,
+    };
 
     dispatch(editPost(post));
+    await dispatch(getPosts());
     setEditToggle(false);
-    // (post.title = form.target[0].value), (post.content = form.target[1].value);
   };
 
   return (
@@ -41,7 +34,6 @@ const Post = ({ post, users }) => {
           className="card-icons-container"
           onClick={() => {
             setEditToggle(!editToggle);
-            console.log(editToggle);
           }}
         >
           Modifier
@@ -49,8 +41,26 @@ const Post = ({ post, users }) => {
 
         {editToggle ? (
           <form ref={formModify} onSubmit={(e) => handleSubmit(e)}>
-            <input type="text" defaultValue={post.title} />
+            <input type="text" defaultValue={post.title} required />
             <textarea defaultValue={post.content}></textarea>
+            <select className="authorInput" required>
+              {post.auteur ? (
+                <option value={JSON.stringify(post.auteur)}>
+                  {post.auteur.pseudo}
+                </option>
+              ) : (
+                <option value={JSON.stringify(user)}>{user.pseudo}</option>
+              )}
+              <option value="">{user.pseudo}</option>
+              {!isEmpty(users) &&
+                users.map((aut, index) => {
+                  return (
+                    <option id={aut.id} value={JSON.stringify(aut)} key={index}>
+                      {aut.pseudo}
+                    </option>
+                  );
+                })}
+            </select>
             <input type="submit" value="Modifier" />
           </form>
         ) : (

@@ -3,24 +3,48 @@
     {
       "id": 1,
       "title": "Les racines de Jupiter",
+      "auteur": {
+        "pseudo": "Chuck NORRIS",
+        "followers": 167800,
+        "age": 100,
+        "id": 365
+      },
       "content": "'Les racines de Jupiter' dévoile l'odyssée de pionniers interstellaires explorant une exoplanète énigmatique. Confrontés à des mystères profonds et à des choix déchirants, ils façonnent le destin de deux mondes.",
       "likes": 606
     },
     {
       "id": 2,
       "title": "Paroles du Vrai Gars",
+      "auteur": {
+        "pseudo": "Billy Cranston, The Blue Power Ranger",
+        "followers": 1000000,
+        "age": 79,
+        "id": 979
+      },
       "content": "Voici le le parcours d'un journaliste intrépide enquêtant sur une technologie de pointe capable de décoder les pensées. Au croisement de l'éthique et de la vérité, il découvre des secrets bouleversants aux conséquences imprévisibles.",
       "likes": 1
     },
     {
       "id": 3,
       "title": "Ma Carena",
+      "auteur": {
+        "pseudo": "Pseudoer",
+        "followers": 11,
+        "age": 109,
+        "id": 399
+      },
       "content": "Dans les rues chaudes d'une métropole, Carena, une danseuse talentueuse qui trouve bien plus que des mouvements sensuels. Entre désirs interdits et ambitions, le roman explore la quête passionnée de Carena pour l'acceptation, la liberté et l'amour.",
       "likes": 350
     },
     {
       "id": 4,
       "title": "Disquettes",
+      "auteur": {
+        "pseudo": "Pseudoer",
+        "followers": 11,
+        "age": 109,
+        "id": 399
+      },
       "content": "Un génie de l'informatique aux talents obscurs, utilisant ses compétences pour manipuler les systèmes et les vies. Mais lorsqu'il s'attaque à la mauvaise cible, il plonge dans un jeu dangereux mettant tout en péril.",
       "likes": 1902
     },
@@ -33,18 +57,36 @@
     {
       "id": 6,
       "title": "Plus Ultra",
+      "auteur": {
+        "pseudo": "Luna Parker",
+        "followers": 150600,
+        "age": 88,
+        "id": 665
+      },
       "content": "Dans un futur fascinant, des explorateurs interstellaires entreprennent un voyage épique, révélant les profondeurs de l'univers et les secrets mystérieux qui s'y cachent. Bienvenue dans 'Plus Ultra'.",
       "likes": 113
     },
     {
       "id": 7,
       "title": "En passant par le rayon bio",
+      "auteur": {
+        "pseudo": "Billy Cranston, The Blue Power Ranger",
+        "followers": 1000000,
+        "age": 79,
+        "id": 979
+      },
       "content": "Naviguant à travers les défis de la vie urbaine trépidante, 'En passant par le rayon bio' suit des âmes en quête de sens. Entre relations complexes et choix cruciaux, une histoire moderne et captivante émerge.",
       "likes": 198
     },
     {
       "id": 8,
       "title": "Un verre sous la pluie",
+      "auteur": {
+        "pseudo": "Billy Cranston, The Blue Power Ranger",
+        "followers": 1000000,
+        "age": 79,
+        "id": 979
+      },
       "content": "Au cœur d'une petite ville, les destins s'entremêlent lors d'une soirée pluvieuse inattendue. 'Un verre sous la pluie' raconte les rencontres émotionnelles et les secrets dévoilés qui changent à jamais leurs vies.",
       "likes": 1598
     },
@@ -63,25 +105,61 @@
     {
       "id": 11,
       "title": "Le Paradis des bavards",
+      "auteur": {
+        "pseudo": "Sophia Adams",
+        "followers": 98000,
+        "age": 97,
+        "id": 742
+      },
       "content": "Un coin tranquille devient le point de rendez-vous pour tous ceux qui veulent raconter leurs secrets les plus fous et leurs histoires les plus folles, créant ainsi des liens étonnants et des moments incroyablement bizarres.",
       "likes": 123
     },
     {
       "id": 12,
-      "title": "Riche.",
-      "content": "r d'événements extravagant. Des erreurs désopilantes, des retournements inattendus et des moments de chaos rendent l'événement tout sauf ordinaire.",
+      "title": "Grand, Beau et Riche.",
+      "auteur": {
+        "pseudo": "Billy Cranston, The Blue Power Ranger",
+        "followers": 1000000,
+        "age": 79,
+        "id": 979
+      },
+      "content": "Dans 'Grand, Beau et Riche.', le planificateur d'événements Chris se lance dans l'organisation d'un gala extravagant. Des erreurs désopilantes, des retournements inattendus et des moments de chaos rendent l'événement tout sauf ordinaire.",
       "likes": 3451
     },
     {
-      "id": 55,
-      "title": "TiTITRE",
+      "id": 545,
+      "title": "terre",
       "auteur": {
         "pseudo": "Pseudoer",
         "followers": 11,
         "age": 109,
         "id": 399
       },
-      "content": "mallallcdscdc",
+      "content": "useSelector() is a hook provided by the React Redux library. It allows components to access the Redux store state and subscribe to updates. By selecting specific slices of state, it provides an efficient way to manage and render data in a React application.",
+      "likes": 0
+    },
+    {
+      "id": 267,
+      "title": "hjty",
+      "auteur": {
+        "pseudo": "Donutella",
+        "followers": 7,
+        "age": 55,
+        "id": 209
+      },
+      "content": "to access the Redux store state and subscribe to updates. By selecting specific slices of state, it provides an efficient way to manage and render data in a React application.",
+      "likes": 0
+    },
+    {
+      "id": 624,
+      "title": "gu",
+      "auteur": {
+        "pseudo": "Mia Cooper",
+        "followers": 75000,
+        "age": 82,
+        "id": 537
+      },
+      "content": "lo",
       "likes": 0
     }
   ],

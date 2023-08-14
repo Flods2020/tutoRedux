@@ -14,6 +14,7 @@ export default function postReducer(state = initialState, action) {
           return {
             ...post,
             title: action.payload.title,
+            auteur: action.payload.auteur,
             content: action.payload.content,
           };
         } else return post;

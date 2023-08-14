@@ -6,12 +6,9 @@ import { addPosts, getPosts } from "../actions/post.action";
 
 const Form = () => {
   const users = useSelector((state) => state.userReducer);
-  //   const posts = useSelector((state) => state.postReducer);
   const dispatch = useDispatch();
 
   const form = useRef();
-
-  //   console.log(users);
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -24,8 +21,8 @@ const Form = () => {
       likes: 0,
     };
 
-    console.log(newPost);
-    await dispatch(addPosts(newPost));
+    // console.log(newPost);
+    dispatch(addPosts(newPost));
     dispatch(getPosts());
     form.current.reset();
   };
@@ -34,11 +31,11 @@ const Form = () => {
     <form ref={form} onSubmit={submitForm}>
       <label>
         Titre {" : "}
-        <input type="text" className="titleInput" />
+        <input type="text" className="titleInput" required />
       </label>
       <label>
         Auteur {" : "}
-        <select className="authorInput" placeholder="Auteur">
+        <select className="authorInput" required>
           <option value="">Sélectionnez un auteur</option>
           {!isEmpty(users) &&
             users.map((aut, index) => {
