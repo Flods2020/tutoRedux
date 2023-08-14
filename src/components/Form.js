@@ -2,27 +2,31 @@ import { useDispatch, useSelector } from "react-redux";
 import "../styles/Form.css";
 import { isEmpty } from "./Utils";
 import { useRef } from "react";
-import { addPosts } from "../actions/post.action";
+import { addPosts, getPosts } from "../actions/post.action";
 
 const Form = () => {
   const users = useSelector((state) => state.userReducer);
-  const posts = useSelector((state) => state.postReducer);
+  //   const posts = useSelector((state) => state.postReducer);
   const dispatch = useDispatch();
 
   const form = useRef();
 
+  //   console.log(users);
+
   const submitForm = async (e) => {
     e.preventDefault();
-    // console.log("form ::: ", form.current[1].keys);
+
     const newPost = {
       id: parseInt(Math.random() * 100 * (Math.random() * 50)),
       title: form.current[0].value,
-      auteur: form.current[1].value,
+      auteur: JSON.parse(form.current[1].value),
       content: form.current[2].value,
       likes: 0,
     };
+
     console.log(newPost);
-    dispatch(addPosts(newPost));
+    await dispatch(addPosts(newPost));
+    dispatch(getPosts());
     form.current.reset();
   };
 
@@ -37,10 +41,10 @@ const Form = () => {
         <select className="authorInput" placeholder="Auteur">
           <option value="">Sélectionnez un auteur</option>
           {!isEmpty(users) &&
-            users.map((user, index) => {
+            users.map((aut, index) => {
               return (
-                <option value={user} key={index}>
-                  {user.pseudo}
+                <option id={aut.id} value={JSON.stringify(aut)} key={index}>
+                  {aut.pseudo}
                 </option>
               );
             })}
