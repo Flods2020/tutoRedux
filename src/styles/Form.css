@@ -10,15 +10,17 @@ form {
 
 label {
   font-weight: 500;
+  color: #451010;
 }
 
 input,
 select {
   border-radius: 5px;
   margin: 7px auto;
-  border: 3px solid #000;
+  border: 2px solid #ad3737;
   width: 60%;
   height: 20px;
+  font-weight: bolder;
 }
 
 input {
@@ -34,6 +36,7 @@ textarea {
   width: 70%;
   margin: 7px auto;
   padding: 10px;
+  border: 2px solid #ad3737;
   border-radius: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -50,5 +53,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #ad3737;
-  color: #d8cccc;
+  border: 2px solid #fee;
+  color: #fee;
 }

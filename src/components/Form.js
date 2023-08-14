@@ -1,22 +1,29 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "../styles/Form.css";
 import { isEmpty } from "./Utils";
 import { useRef } from "react";
+import { addPosts } from "../actions/post.action";
 
 const Form = () => {
   const users = useSelector((state) => state.userReducer);
+  const posts = useSelector((state) => state.postReducer);
+  const dispatch = useDispatch();
 
   const form = useRef();
+
   const submitForm = async (e) => {
     e.preventDefault();
+    // console.log("form ::: ", form.current[1].keys);
     const newPost = {
       id: parseInt(Math.random() * 100 * (Math.random() * 50)),
-      titre: form.current[0].value,
+      title: form.current[0].value,
       auteur: form.current[1].value,
       content: form.current[2].value,
       likes: 0,
     };
     console.log(newPost);
+    dispatch(addPosts(newPost));
+    form.current.reset();
   };
 
   return (
@@ -32,7 +39,7 @@ const Form = () => {
           {!isEmpty(users) &&
             users.map((user, index) => {
               return (
-                <option value={user.id} key={index}>
+                <option value={user} key={index}>
                   {user.pseudo}
                 </option>
               );
