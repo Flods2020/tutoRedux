@@ -32,3 +32,52 @@
   font-style: italic;
   font-weight: 800;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+button {
+  background: #eee;
+  border: 2px solid #ad3737;
+  border-radius: 4px;
+  color: #ad3737;
+  padding: 6px;
+  margin: auto;
+  font-weight: bolder;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ad3737;
+  border: 2px solid #fee;
+  color: #fee;
+}
+
+.formCard textarea {
+  height: 220px;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid #ad3737;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  resize: none;
+}
+
+.formModify-athorInput {
+  border-radius: 5px;
+  margin: 7px auto;
+  border: 2px solid #ad3737;
+  text-align: center;
+  width: 90%;
+  height: 35px;
+  font-weight: bolder;
+}
+
+input[type="text"] {
+  text-align: center;
+}

@@ -23,8 +23,8 @@ const Form = () => {
 
     // console.log(newPost);
     dispatch(addPosts(newPost));
-    dispatch(getPosts());
     form.current.reset();
+    dispatch(getPosts());
   };
 
   return (

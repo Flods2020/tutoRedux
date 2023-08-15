@@ -1,4 +1,9 @@
-import { ADD_POSTS, EDIT_POSTS, GET_POSTS } from "../actions/post.action";
+import {
+  ADD_POSTS,
+  DELETE_POST,
+  EDIT_POST,
+  GET_POSTS,
+} from "../actions/post.action";
 
 const initialState = {};
 
@@ -8,7 +13,7 @@ export default function postReducer(state = initialState, action) {
       return action.payload;
     case ADD_POSTS:
       return [action.payload, ...state];
-    case EDIT_POSTS:
+    case EDIT_POST:
       return state.map((post) => {
         if (post.id === action.payload.id) {
           return {
@@ -19,6 +24,8 @@ export default function postReducer(state = initialState, action) {
           };
         } else return post;
       });
+    case DELETE_POST:
+      return state.filter((post) => post.id != action.payload);
     default:
       return state;
   }

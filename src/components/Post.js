@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import "../styles/Post.css";
 import { useDispatch } from "react-redux";
-import { editPost, getPosts } from "../actions/post.action";
+import { deletePost, editPost, getPosts } from "../actions/post.action";
 import { isEmpty } from "./Utils";
 
 const Post = ({ post, users }) => {
@@ -23,27 +23,22 @@ const Post = ({ post, users }) => {
     };
 
     dispatch(editPost(post));
-    await dispatch(getPosts());
     setEditToggle(false);
+    dispatch(getPosts());
   };
 
   return (
     <>
       <div className="card">
-        <button
-          className="card-icons-container"
-          onClick={() => {
-            setEditToggle(!editToggle);
-          }}
-        >
-          Modifier
-        </button>
-
         {editToggle ? (
-          <form ref={formModify} onSubmit={(e) => handleSubmit(e)}>
+          <form
+            ref={formModify}
+            className="formCard"
+            onSubmit={(e) => handleSubmit(e)}
+          >
             <input type="text" defaultValue={post.title} required />
             <textarea defaultValue={post.content}></textarea>
-            <select className="authorInput" required>
+            <select className="formModify-athorInput" required>
               {post.auteur ? (
                 <option value={JSON.stringify(post.auteur)}>
                   {post.auteur.pseudo}
@@ -83,6 +78,26 @@ const Post = ({ post, users }) => {
             </span>
           </>
         )}
+
+        <div className="btn-container">
+          <button
+            className="card-icons-container"
+            onClick={() => {
+              setEditToggle(!editToggle);
+            }}
+          >
+            {editToggle ? "Annuler" : "Modifier"}
+          </button>
+
+          <button
+            className="card-icons-container"
+            onClick={() => {
+              dispatch(deletePost(post.id));
+            }}
+          >
+            Supprimer
+          </button>
+        </div>
       </div>
     </>
   );
